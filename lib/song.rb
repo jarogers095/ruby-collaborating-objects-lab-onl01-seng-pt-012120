@@ -22,6 +22,7 @@ class Song
     name_of_song = filename_pieces[1]
     song_object = Song.new(name_of_song)
     song_object.artist = Artist.new(name_of_artist)
+    return song_object
   end
 end
   
