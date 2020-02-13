@@ -17,5 +17,5 @@ class Song
   end
   
   def self.new_by_filename(filename)
-    song_name = filename.split(//)
+    song_name = filename.split(/ - |\.mp3/)
   
