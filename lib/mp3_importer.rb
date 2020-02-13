@@ -6,6 +6,6 @@ class MP3Importer
   end
   
   def files()
-    return Dir.entries(@path)
+    return Dir.entries(@path).select {|f| f.include?(".mp3")}
   end
 end
